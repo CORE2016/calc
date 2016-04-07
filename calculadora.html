@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CORE2016 P3</title>
+	<meta char set="utf-8">
+	<script type="text/javascript"
+			src="http://code.jquery.com/jquery-2.0.0.min.js">
+	</script>
+	<script type="text/javascript">
+	$(function() {
+		$("#pantalla").on("click",
+			function(){$("#pantalla").val("");
+			});
+		$("#cuadrado").on("click",
+			function(){
+				var pant=$("#pantalla");
+				var num=pant.val();
+				pant.val(Math.pow(num,2));
+			});
+	});
+	</script>
+
+
+</head>
+<body>
+	<header>
+		<p>	Buenos dias, bienvenido a la calculadora de Diego Poderoso Novo (<a href="mailto:diego.poderoso.novo@alumnos.upm.es">diego.poderoso.novo@alumnos.upm.es</a>)
+		</p>
+	</header>
+	<p>Numero:
+		<input type="text" id="pantalla">
+	</p>
+	<div id="main">
+		<p>
+			<button id="cuadrado"> x<sup>2</sup> </button>
+		</p>
+	</div>
