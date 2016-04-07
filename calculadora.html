@@ -11,6 +11,17 @@
 		$("#pantalla").on("click",
 			function(){$("#pantalla").val("");
 			});
+		$("#raiz").on("click",
+			function(){
+				var pant=$("#pantalla");
+				var num=pant.val();
+				if(num<0){
+					pant.val("ERROR");
+				}
+				else{
+					pant.val(Math.sqrt(num));
+				}
+			});
 		$("#cuadrado").on("click",
 			function(){
 				var pant=$("#pantalla");
@@ -38,6 +49,7 @@
 	</p>
 	<div id="main">
 		<p>
+			<button id="raiz"> sqrt(x)</button>
 			<button id="cuadrado"> x<sup>2</sup> </button>
 			<button id="cubo"> x<sup>3</sup> </button>
 		</p>
