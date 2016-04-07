@@ -28,6 +28,12 @@
 				var num=pant.val();
 				pant.val(Math.pow(num,2));
 			});
+		$("#cubo").on("click",
+			function(){
+				var pant=$("#pantalla");
+				var num=pant.val();
+				pant.val(Math.pow(num,3));
+			});
 	});
 	</script>
 
@@ -45,5 +51,6 @@
 		<p>
 			<button id="raiz"> sqrt(x)</button>
 			<button id="cuadrado"> x<sup>2</sup> </button>
+			<button id="cubo"> x<sup>3</sup> </button>
 		</p>
 	</div>
